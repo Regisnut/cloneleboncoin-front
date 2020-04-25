@@ -35,6 +35,7 @@ function Publish({ tokenUser }) {
 			const token = tokenUser;
 
 			if (title && description && price) {
+				console.log('offer 1');
 				const response = await axios.post(`${url}/offer/publish`, formData, {
 					headers: {
 						authorization: `Bearer ${token}`,
