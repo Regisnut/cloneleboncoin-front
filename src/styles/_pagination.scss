@@ -1,0 +1,61 @@
+.PaginationContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	max-width: 600px;
+	margin: 35px auto;
+	height: 25px;
+	.iconChevron {
+		margin: 0 20px;
+		cursor: pointer;
+		color: $greybackground;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+			transform: scale(1.3);
+			transition: 20ms ease;
+		}
+	}
+}
+
+.selected {
+	color: $white;
+	background-color: $primaryColor;
+	margin: 0 3px;
+	border-radius: 3px;
+	padding: 6px 3px;
+	cursor: pointer;
+	justify-content: space-between;
+	box-sizing: border-box;
+	&:hover {
+		box-shadow: rgba(70, 68, 68, 0);
+		box-sizing: border-box;
+		transform: scale(1.1);
+		transition: 20ms ease;
+	}
+	& span {
+		padding: 8px;
+	}
+}
+
+.unselected {
+	// border: 1px solid $greybackground;
+	margin: 0 3px;
+	border-radius: 3px;
+	padding: 6px 3px;
+	cursor: pointer;
+	justify-content: space-between;
+	box-sizing: border-box;
+	&:hover {
+		box-shadow: rgba(70, 68, 68, 0);
+		box-sizing: border-box;
+		transform: scale(1.1);
+		transition: 20ms ease;
+		border: 0.6px solid $greybackground;
+	}
+	& span {
+		padding: 8px;
+	}
+}

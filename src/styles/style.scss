@@ -1,0 +1,170 @@
+@import "./variables.scss";
+@import "./footer";
+@import "./pagination";
+@import "./offer";
+@import "./login";
+@import "./signup";
+@import "./header";
+@import "./publish";
+@import "./payment";
+
+@import "./sidebar";
+
+body {
+	font-family: $main-font;
+	font-size: 14px;
+	height: 100vh;
+}
+
+///////// OFFERS/////////
+.firstContainer {
+	height: 200px;
+	.searchTop {
+		background-color: $orangeBackground;
+		height: 70px;
+		border-bottom-left-radius: 30%;
+		border-bottom-right-radius: 30%;
+		z-index: 10000;
+
+		& form {
+			max-width: 720px;
+			border-radius: 4px;
+			color: $black;
+			background-color: $white;
+			height: 120px;
+			width: 80%;
+			z-index: 3333;
+			margin: 0 auto;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+			position: relative;
+			left: 0;
+			top: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.searchBar {
+				border: 1px solid $lightgrey;
+				border-radius: 4px;
+				margin: 0 10px;
+				padding: 0 4px;
+				box-shadow: 1px 1px 2px 1px $lightgrey;
+			}
+		}
+
+		& input {
+			background-color: none;
+			font-size: 14px;
+			width: 230px;
+			padding: 8px 4px;
+			border: none;
+			border-radius: 4px;
+		}
+		& button {
+			border: none;
+			border-radius: 4px;
+			font-size: 14px;
+			width: 120px;
+			padding: 7px 20px;
+			background-color: $blueBackground;
+			color: $white;
+			box-shadow: 1px 1px 2px 1px $blueBackground;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.firstContainer form {
+		flex-direction: column;
+	}
+	.firstContainer form button {
+		margin-top: 15px;
+	}
+}
+@media screen and (min-width: 680px) {
+}
+//MAP OFFERS
+
+main {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	.cardContainer {
+		box-shadow: 3px 3px 5px 6px #ccc;
+		border-radius: 4px;
+		border: 1px solid $lightgrey;
+		display: flex;
+		align-items: center;
+		height: 190px;
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+
+		& img {
+			padding: 0px 0px 0px 4px;
+			width: 250px;
+			height: 98%;
+			object-fit: contain;
+			object-position: center;
+			border-radius: 4px 0 0 4px;
+			opacity: 0.6;
+			&:hover {
+				opacity: 0.9;
+				transition: 200ms ease;
+			}
+		}
+		.cardContainerRight {
+			display: flex;
+			flex-direction: column;
+			// align-items: center;
+			justify-content: center;
+			padding: 20px 30px;
+		}
+		h2 {
+			font-weight: bold;
+			font-size: large;
+			letter-spacing: 5px;
+			margin-bottom: 8px;
+			&:hover {
+				color: $orangeBackground;
+				font-weight: bolder;
+			}
+		}
+
+		& h3 {
+			color: $orangeBackground;
+			opacity: 0.8;
+			font-weight: bold;
+			font-size: 18px;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		& p {
+			margin: 6px 0;
+		}
+		&:hover {
+			transform: scaleX(1.01);
+			transition: 200ms ease;
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	main .cardContainer img {
+		width: 150px;
+		height: 98%;
+	}
+	main .cardContainer .cardContainerRight {
+		width: 100%;
+		height: 100%;
+		padding: 2px 4px 2px 15px;
+		& h2 {
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+	}
+}
+@media screen and (min-width: 680px) {
+}

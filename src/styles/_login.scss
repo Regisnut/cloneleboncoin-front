@@ -1,0 +1,80 @@
+.containerLogin {
+	max-width: 1024px;
+	margin: 30px auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: $primaryBackground;
+	& main {
+		border-radius: 4px;
+		min-height: 300px;
+		border: 1px solid lightgrey;
+		margin: 0 auto;
+		padding: 30px;
+		button {
+			width: 100%;
+			border: 1px solid $blueColor;
+			font-weight: bold;
+			font-size: large;
+			padding: 8px 16px;
+			border-radius: 4px;
+			color: $blueColor;
+			opacity: 0.9;
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+	}
+	& h1 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 36px;
+		height: 45px;
+		border-bottom: 2px solid $primaryColor;
+		margin-bottom: 10px;
+	}
+	& p {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 20px;
+	}
+	& form {
+		font-size: 16px;
+		line-height: 24px;
+		margin: 10px 0;
+		display: flex;
+		flex-direction: column;
+		& input {
+			font-size: 18px;
+			background-color: $lightgrey;
+			border-radius: 4px;
+			width: 85%;
+			padding: 10px 6px;
+			margin: 5px 5px 20px 0;
+			border: none;
+		}
+		.forget {
+			color: $blueColor;
+			cursor: pointer;
+			font-size: 13px;
+			margin-bottom: 1rem;
+		}
+		button {
+			width: 100%;
+			border: none;
+			font-weight: bold;
+			font-size: large;
+			padding: 8px 16px;
+			border-radius: 4px;
+			background-color: $blueColor;
+			color: $white;
+			opacity: 0.9;
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+	}
+}

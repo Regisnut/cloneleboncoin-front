@@ -1,0 +1,68 @@
+.sidebarContainer {
+	color: $primaryColor;
+	height: 100%;
+	background: $white;
+	box-shadow: 1px 0px 7px $greybackground;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60%;
+	max-width: 400px;
+	z-index: 20000;
+	transform: translateX(-100%);
+	transition: transform 0.3S ease-out;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+
+	& span {
+		opacity: 0.9;
+		cursor: pointer;
+		margin-bottom: 20px;
+		font-weight: bold;
+		font-size: 16px;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+	& section {
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.boxName {
+			display: flex;
+			flex-direction: column;
+			height: 60px;
+		}
+		.name {
+			color: $greybackground;
+			font-weight: bolder;
+			margin-top: 10px;
+			padding: 4px 0;
+		}
+	}
+
+	& h3 {
+		width: 200px;
+		border-radius: 4px;
+		display: flex;
+		background-color: $orangeBackground;
+		color: $white;
+		padding: 6px 8px;
+		&:hover {
+			cursor: pointer;
+		}
+		& div {
+			margin: 0 4px;
+		}
+	}
+}
+.sidebarContainer.open {
+	transform: translateX(0);
+}
+
+@media screen and (max-width: 759px) {
+}
