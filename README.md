@@ -31,7 +31,7 @@ SASS has been used in this project.
 <img
 		width="210"
 		alt="Capture 2"
-		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/assets/capture2.png">
+		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/src/assets/capture2.png">
 <img
 		width="210"
 		alt="Capture 3"
