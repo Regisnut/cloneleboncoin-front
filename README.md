@@ -4,7 +4,7 @@
 <img alt="gif" src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/assets/Kapture.gif" width="1000">
 </p> -->
 
-<p>demo : [https://cloneleboncoin.netlify.app/](https://cloneleboncoin.netlify.app/) </p>
+<p>demo : https://cloneleboncoin.netlify.app/ </p>
 
 ## Overview
 
@@ -15,20 +15,19 @@ Responsive with SIDEBAR menu
 
 Inspired by the famous official website [leboncoin](https://www.leboncoin.fr)
 
-
 ### `CSS`
 SASS has been used in this project.
 <img
 		width="100"
 		alt="sass"
-		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/assets/sass.png">
+		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/src/assets/sass.png">
 
 ## Screenshots
 <p align="center">
 <img
 		width="210"
 		alt="Capture 1"
-		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/assets/capture1.png">
+		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/src/assets/capture1.png">
 <img
 		width="210"
 		alt="Capture 2"
@@ -36,7 +35,7 @@ SASS has been used in this project.
 <img
 		width="210"
 		alt="Capture 3"
-		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/assets/capture3.png">
+		src="https://github.com/Regisnut/cloneleboncoin-front/blob/master/src/assets/capture3.png">
 </p>
 
 ## 🌱 Installation
@@ -70,16 +69,16 @@ npm start
 
 ## 🌼 dependencies
 
->> 
-*React Stripe Elements
-+JS Cookie
-+Axios
-+Node-Sass
++ React Stripe Elements
++ JS Cookie
++ Axios
++ Node-Sass
 
 ## License contact
 
 ==License, Copyright © 2020==
-[LIEN GITHUB](https://github.com/regisnut).
+
+[MY LINK GITHUB](https://github.com/regisnut).
 ---
 
 [![with-love](https://img.shields.io/badge/made%20with-%F0%9F%92%8C-red.svg)](https://github.com/regisnut/leboncoin-front)
