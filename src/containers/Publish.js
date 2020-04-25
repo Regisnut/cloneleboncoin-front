@@ -33,7 +33,8 @@ function Publish({ tokenUser }) {
 
 		try {
 			const token = tokenUser;
-
+			console.log('tokenUser pour publish', tokenUser);
+			console.log('token pour publish', token);
 			if (title && description && price) {
 				console.log('offer 1');
 				const response = await axios.post(`${url}/offer/publish`, formData, {
